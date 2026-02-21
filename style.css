@@ -1,0 +1,186 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background: #f6f7fb;
+  color: #111;
+  line-height: 1.5;
+}
+
+/* Общий контейнер */
+.container{
+  width: min(1000px, 92%);
+  margin: 0 auto;
+}
+
+/* Header + nav */
+header{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #0b0b0b;
+  box-shadow: 0 4px 20px rgba(0,0,0,.15);
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+nav h2{
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: .5px;
+}
+
+nav ul{
+  display: flex;
+  gap: 18px;
+  list-style: none;
+}
+
+nav a{
+  color: #fff;
+  text-decoration: none;
+  opacity: .9;
+}
+
+nav a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero{
+  padding: 70px 0 40px;
+}
+
+.hero-card{
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px 28px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  text-align: center;
+}
+
+.hero h1{
+  font-size: 34px;
+  margin-bottom: 6px;
+}
+
+.hero p{
+  opacity: .8;
+}
+
+button{
+  cursor: pointer;
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 18px;
+  margin-top: 16px;
+  background: #111;
+  color: #fff;
+}
+
+button:hover{
+  opacity: .9;
+}
+
+/* Секции */
+section{
+  padding: 24px 0;
+}
+
+.card{
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+}
+
+section h2{
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card p{
+  text-align: center;
+  opacity: .9;
+}
+
+/* Навыки */
+.skills{
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.skill{
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: #f0f1f6;
+  border: 1px solid #e6e7ee;
+  font-weight: 600;
+}
+
+/* Footer */
+footer{
+  margin-top: 30px;
+  padding: 18px 0;
+  text-align: center;
+  background: #0b0b0b;
+  color: #fff;
+}
+
+/* Modal */
+.modal{
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  padding: 20px;
+}
+
+.modal-content{
+  background: white;
+  width: min(420px, 92%);
+  margin: 120px auto 0;
+  padding: 22px;
+  border-radius: 14px;
+  position: relative;
+  box-shadow: 0 18px 50px rgba(0,0,0,.2);
+}
+
+#closeModal{
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  font-size: 26px;
+  cursor: pointer;
+  opacity: .7;
+}
+
+#closeModal:hover{
+  opacity: 1;
+}
+
+/* Адаптив */
+@media (max-width: 768px){
+  nav{
+    flex-direction: column;
+    gap: 10px;
+  }
+}
